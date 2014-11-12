@@ -138,7 +138,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/Sky.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -248,15 +248,25 @@ a:focus {
     }
 }
 
+/*Added background image and black border to text*/
+#about {
+     background: url(../img/FullBody.jpg) no-repeat center center scroll;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     height: 100%;
+}
+
 .content-section {
     padding-top: 100px;
 }
 
 .download-section {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    /*background:url(../img/Smooth.jpg) repeat-y, 
+        url(../img/Long.jpg) repeat center center scroll;*/
+    background: url(../img/PandaLeaves.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -272,11 +282,11 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
-        padding: 100px 0;
+        padding: 150px 0;
     }
 
     #map {
