@@ -11,6 +11,7 @@
 }
 
 #about {
+
      background: url(../img/FullBody.jpg) no-repeat center center scroll;
      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
      height: 100%;
@@ -263,7 +264,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 250px;
+    padding-top: 100px;
 }
 
 .download-section {
