@@ -169,7 +169,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/Sky.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -279,20 +279,15 @@ a:focus {
     }
 }
 
-/*Added background image and black border to text*/
-
 .content-section {
     padding-top: 100px;
 }
 
 .download-section {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    /*background:url(../img/Smooth.jpg) repeat-y, 
-        url(../img/Long.jpg) repeat center center scroll;*/
-    background: url(../img/PandaLeaves.jpg) no-repeat center center scroll;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -311,9 +306,9 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
-        padding: 150px 0;
-    }
+   /* .download-section {
+        padding: 100px 0;
+    }*/
 
     #map {
         height: 400px;
@@ -396,4 +391,5 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
 }
