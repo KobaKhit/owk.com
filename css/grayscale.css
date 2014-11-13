@@ -4,40 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- /*My CSS*/
- #intrologo {
-    width:100%; 
-  @media (min-width: 767px) {
-    width: auto;
-  }
-}
-
-#about {
-     background: url(../img/FullBody.jpg) no-repeat center center scroll;
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     height: 100%;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 47.25%;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    max-height: 300px;
-    width: 100%;
-    height: 100%;
-}
-
-
- /*End my CSS*/
-
-    background: 0 0;
 body {
     width: 100%;
     height: 100%;
