@@ -4,6 +4,22 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*My CSS*/
+ #intrologo {
+    width:100%; 
+  @media (min-width: 767px) {
+    width: auto;
+  }
+}
+
+#about {
+     background: url(../img/FullBody.jpg) no-repeat center center scroll;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     height: 100%;
+}
+
+ /*End my CSS*/
+
 body {
     width: 100%;
     height: 100%;
@@ -249,11 +265,6 @@ a:focus {
 }
 
 /*Added background image and black border to text*/
-#about {
-     background: url(../img/FullBody.jpg) no-repeat center center scroll;
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-     height: 100%;
-}
 
 .content-section {
     padding-top: 100px;
