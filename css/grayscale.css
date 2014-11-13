@@ -20,7 +20,6 @@
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
     #iframe{
-        width:400px;
         height:200px;
     }
 }
