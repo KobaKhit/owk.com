@@ -11,10 +11,20 @@
 }
 
 #about {
-
      background: url(../img/FullBody.jpg) no-repeat center center scroll;
      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
      height: 100%;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+    #iframe{
+        height:200px;
+    }
 }
 
  /*End my CSS*/
