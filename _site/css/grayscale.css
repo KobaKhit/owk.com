@@ -11,14 +11,23 @@
 }
 
 #about {
-    background: url(../img/FullBody.jpg) no-repeat center center scroll;
+    padding-top: 60px;
+    background: url(../img/FullBody.jpg) no-repeat center top scroll;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    height: 100%;
+    width:100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    /*background-size: 600px 800px;*/
     background-size: cover;
     -o-background-size: cover;
 }
+
+#pic {
+    height: 40%;
+    width:40%;
+}
+
+
 
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
@@ -163,12 +172,12 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/Sky.jpg) no-repeat bottom center scroll;
+    background: url(../img/emblem/JAMESOWKEMBLEM980.png) no-repeat center center scroll;
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
 }
 
 .intro .intro-body {
@@ -281,7 +290,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/PandaLeaves.jpg) no-repeat center center scroll;
+    background: url(../img/sky2.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
