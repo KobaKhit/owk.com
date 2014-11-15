@@ -25,10 +25,6 @@
 
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
-    #iframe{
-        height:200px;
-        position: relative;
-    }
     body:after {
     content:"";
     position: fixed;
@@ -36,7 +32,12 @@
     top: 0;
     bottom: 0;
     left: 2%;
-    border-left: 3px solid red; /*change these values to suit your liking*/
+    border-left: 2px solid red; /*change these values to suit your liking*/
+    }
+
+    #iframe{
+        height:200px;
+        position: relative;
     }
 }
 
