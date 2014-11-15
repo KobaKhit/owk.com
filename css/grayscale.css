@@ -32,7 +32,7 @@
     top: 0;
     bottom: 0;
     left: 2%;
-    border-left: 2px solid red; /*change these values to suit your liking*/
+    border-left: 0px solid red; /*change these values to suit your liking*/
     }
 
     #iframe{
