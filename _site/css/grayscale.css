@@ -25,15 +25,6 @@
 
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
-    #page-top:after {
-    content:"";
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    bottom: 0;
-    left: 2%;
-    border-left: 0px solid red; /*change these values to suit your liking*/
-    }
 
     #iframe{
         height:200px;
