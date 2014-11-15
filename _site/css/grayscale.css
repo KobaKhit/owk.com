@@ -38,7 +38,16 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
-    .centered-vert-line();
+}
+
+html:after {
+    content:"";
+    position: absolute;
+    z-index: 100000;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    border-left: 2px solid red; /*change these values to suit your liking*/
 }
 
 html {
