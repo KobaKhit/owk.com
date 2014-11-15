@@ -63,7 +63,7 @@ body {
     top: 0;
     bottom: 0;
     left: 2%;
-    border-left: 10px solid red; /*change these values to suit your liking*/
+    border-left: 5px solid red; /*change these values to suit your liking*/
 }
 
 html {
