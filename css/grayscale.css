@@ -27,7 +27,7 @@ font {
 
 #about {
     padding-top: 60px;
-    background: url(../img/facepalm2.jpg) repeat center center scroll;
+    /*background: url(../img/FullBody.jpg) repeat center center scroll;*/
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     width:100%;
     /*min-height: 900px*/
@@ -46,6 +46,10 @@ font {
         height:200px;
         position: relative;
     }
+
+    .l{
+        font-size: 22px;
+    }
 }
 
 iframe{
@@ -53,7 +57,12 @@ iframe{
     }
 
 hr { background-color: red; height: 1px; border: 0; }
+
 .introheader {letter-spacing: 16px;}
+
+#download {
+    /*background-color: white;*/
+}
  /*End my CSS*/
 
 body {
@@ -318,8 +327,8 @@ a:focus {
 .download-section {
     width: 100%;
     color: #fff;
-    background: url(../img/sky2.jpg) no-repeat center center scroll;
-    background-color: #000;
+    /*background: url(../img/sky2.jpg) no-repeat center center scroll;*/
+    background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
