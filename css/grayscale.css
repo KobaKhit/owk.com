@@ -5,6 +5,10 @@
  */
 
  /*My CSS*/
+ .section{
+    height: auto !important;
+}
+
  @font-face {
     font-family: NovaSolid;
     
@@ -37,7 +41,6 @@ font {
     background-size: contain;
     -o-background-size: contain;
 }
-
 
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */

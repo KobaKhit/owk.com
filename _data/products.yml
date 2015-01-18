@@ -1,0 +1,11 @@
+- name: Panda White on Black
+  img: /img/products/owk_white.jpg
+  price: 25
+  quantity: 5
+  id: 1
+
+- name: Panda Gold on Black
+  img: /img/products/owk-gold.jpg
+  price: 25
+  quantity: 5
+  id: 2
