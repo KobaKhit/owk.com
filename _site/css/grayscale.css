@@ -44,7 +44,7 @@ font {
 }
 
 .mlk{
-    padding-top:3%; background-color: white;height:700px;
+    padding-top:40px; background-color: white;height:700px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -54,10 +54,10 @@ font {
         height:200px;
         position: relative;
     }
+}
 
-    .mlk{
-        padding-top:8%;
-    }
+@media (max-device-width: 680px){
+
 }
 
 
