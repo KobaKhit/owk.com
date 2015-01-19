@@ -51,7 +51,7 @@ font {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
 
     .iframe{
-        height:200px;
+        height:800px;
         position: relative;
     }
 
