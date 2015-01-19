@@ -55,13 +55,12 @@ font {
         position: relative;
     }
 
-    
+    .mlk{
+        padding-top:50px;
+    }
 }
 
 @media (max-device-width: 680px){
-    .mlk{
-        padding-top:18%;
-    }
 
 }
 
