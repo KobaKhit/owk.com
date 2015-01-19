@@ -5,8 +5,9 @@
  */
 
  /*My CSS*/
- .section{
-    height: auto !important;
+ .container-full {
+  margin: 0 auto;
+  width: 100%;
 }
 
  @font-face {
@@ -45,15 +46,16 @@ font {
 @media only screen and (max-device-width: 480px) {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
 
-    #iframe{
+    .iframe{
         height:200px;
         position: relative;
     }
 
-    .l{
-        font-size: 22px;
+    .mlk{
+        padding-top:8%;
     }
 }
+
 
 iframe{
         position: relative;
