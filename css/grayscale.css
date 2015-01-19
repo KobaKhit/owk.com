@@ -51,13 +51,18 @@ font {
     /* STYLES HERE for DEVICES with physical max-screen width of 480px */
 
     .iframe{
-        height:800px;
+        height:200px;
         position: relative;
     }
 
+    
+}
+
+@media (max-device-width: 680px){
     .mlk{
         padding-top:8%;
     }
+
 }
 
 
