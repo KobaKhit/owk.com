@@ -12,13 +12,13 @@
 
 - name: Typography White
   img: /img/products/temple_white.jpg
-  price: 25
+  price: 35
   quantity: 5
   id: 2
 
 - name: Typography Red
   img: /img/products/temple_red.jpg
-  price: 25
+  price: 35
   quantity: 5
   id: 2
 
