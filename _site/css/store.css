@@ -26,7 +26,8 @@ div.item {
     display: inline-block;
     text-align: center;
     width: 100%;
-    max-width:300px;
+    max-width:295px;
+    padding-bottom: 5px;
 }
 
 .caption {

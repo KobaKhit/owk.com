@@ -6,7 +6,7 @@ layout: store
 <div class="store_page">
 	<div class='container'>
 		<div class='col-lg-10 col-centered'>
-			<font size='7' color='red'>Coming Soon</font>
+			<!-- <font size='7' color='red'>Coming Soon</font> -->
 			<!-- <div id ='main_nav' class='text-center row'>
 				<div class='col-lg-3 col-centered'>
 					<ul class='list-inline'>
@@ -24,14 +24,17 @@ layout: store
 
 				<hr>
 				<h3 style='display:inline;'>
-					Products 
+					Products <br>
+					<small>To buy send an email to onlywithkings@gmail.com</small>
 				</h3>
-				<a href="#" class="snipcart-checkout">
+
+				<!-- Snipcart cart -->
+				<!-- <a href="#" class="snipcart-checkout">
 					<span class="snipcart-summary">
 				    <span style='padding: 1px 5px 2px;border-radius: 10px;background-color:white;border:2px solid'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>: (<span class="snipcart-total-items"></span>)</span>
 
 					</span>
-				</a>
+				</a> -->
 				
 				<hr>
 			</div>
@@ -40,7 +43,8 @@ layout: store
 				<ul class='list-unstyled list-inline'>
 				{% for pro in site.data.products %}
 				  <li>
-				  	<a href="#"
+				  	<!-- Snipcart clickable item -->
+				  	<!-- <a href="#"
 						    class="snipcart-add-item hov-wrap" 
 						    data-item-id="{{pro.id}}" 
 						    data-item-name="{{pro.name}}" 
@@ -54,9 +58,31 @@ layout: store
 					  	<div class="item">
 					  		<span class='hov-text'>Buy <hr> {{pro.name}} <hr> {{pro.price}}.00$</span>
 						    <img class = 'product_img' src='{{ pro.img }}'>
-						    <!-- <span class="caption">{{pro.price}}.00$</span> -->
+						
 						</div>
-					</a>
+					</a> -->
+
+					<!-- On image front click click the image -->
+					<script type="text/javascript">
+ 
+						 //  $(document).ready(function(){
+						 
+						 //    $("#{{pro.img}}_front").on("click", (function () {
+						 
+							// alert("Button 2 is clicked!");
+						 
+							// $("#{{pro.img}}_front > a").trigger("click");
+						 
+						 //    }));
+						 
+						 //  });
+					</script>
+
+					<div id = "{{pro.img}}_front" class="item hov-wrap">
+					  		<!-- <span class='hov-text'>Buy <hr> {{pro.name}} <hr> {{pro.price}}.00$</span> -->
+						    <img class = 'product_img fancybox' src='{{ pro.img }}' title="{{pro.name}}">
+					</div>
+
 				  </li>
 				{% endfor %}
 				</ul>

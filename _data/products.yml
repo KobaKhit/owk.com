@@ -5,7 +5,51 @@
   id: 1
 
 - name: Panda Gold on Black
-  img: /img/products/owk-gold.jpg
+  img: /img/products/owk_gold.jpg
   price: 25
   quantity: 5
   id: 2
+
+- name: Typography White
+  img: /img/products/temple_white.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Typography Red
+  img: /img/products/temple_red.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Flag White
+  img: /img/products/flag_white.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Flag Red
+  img: /img/products/flag_gold.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Handwriting White
+  img: /img/products/handwriting_white.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Handwriting Gold
+  img: /img/products/handwriting_gold.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+- name: Panda White on Black - Female
+  img: /img/products/owk_fe.jpg
+  price: 25
+  quantity: 5
+  id: 2
+
+
