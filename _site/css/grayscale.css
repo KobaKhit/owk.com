@@ -5,6 +5,11 @@
  */
 
  /*My CSS*/
+ .col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
  .container-full {
   margin: 0 auto;
   width: 100%;
