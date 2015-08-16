@@ -1,0 +1,35 @@
+---
+---
+<div class='container'>
+	<!-- Store -->
+	<div class='text-center'>
+		<h3>Shop Attire</h3>
+        <div class ='text-center'>
+            <ul class='list-unstyled list-inline product-list'>
+            {% for pro in site.data.products %}
+              <li>
+                <div class = 'product-div'>
+                    <span class='product-desc'>{{pro.name}} {{ pro.price}}.00$</span>
+                    <a href="http://owkstore.tictail.com/" title="{{pro.name}} {{ pro.price}}.00$">
+                        <img class = 'product-img' src="{{pro.img}}" alt="" />
+                    </a>
+                </div>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+	</div>
+
+	<!-- Soundcloud -->
+	<div class='text-center'>
+		<h3>Soundtrack</h3>
+		<div style = 'max-width:400px;margin:0 auto'>
+		{% include soundcloud.html %}
+		</div>
+	</div>
+
+    <div class='text-center'>
+        <h3>Community<br><small>#onlywithkings</small></h3>
+        <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/0382dee45a34405e19a34434e842801c6625bd0b.html" id="instansive_0382dee45a" name="instansive_0382dee45a"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+    </div>
+</div>

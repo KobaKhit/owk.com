@@ -1,0 +1,96 @@
+
+ @font-face {
+    font-family: Arcon;
+    
+    src: url(../fonts/arcon.regular.otf);
+}
+
+body {
+    font-family: Arcon, Verdana
+}
+
+a {
+    color:black;
+}
+
+.navbar{
+    background: none;
+    border: none;
+}
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-toggle {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  border:none;
+}
+
+.story {
+    background: url(../img/story.jpg) no-repeat left center scroll;
+    height:700px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+.story-desc {
+	font-size: 26px; 
+	/*padding-top:9%*/
+}
+
+.product-list{
+    overflow:scroll;
+    white-space: nowrap;
+}
+
+.product-list li{
+    padding-bottom:10px;
+}
+
+.product-div{
+    width:300px;
+    position: relative;
+}
+
+.product-div * {
+    width:inherit;
+}
+
+.product-desc{
+    position: absolute;
+    bottom:0;
+}
+
+.about-img {
+    width:200px
+}
+
+@media(max-width: 480px) {
+   /* CSS overrides for mobile here */
+   .story-desc {
+    font-size:16px !important;
+    }
+}
+
+.nounderline{
+	text-decoration: none !important;
+	color: inherit;
+}
+
+footer {
+    position:relative;
+    height:50px;
+    margin-bottom:5%;
+}

@@ -5,6 +5,19 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*------------------- Koba's edits --------------*/
+ .container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+/*-----------------------------------------------*/
+
+
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
