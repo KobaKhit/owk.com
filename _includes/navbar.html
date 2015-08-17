@@ -12,11 +12,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class='active'><a href="javascript:void(0)" onclick="javascript:inc('home')">Home</a></li>
-        <li><a href="javascript:void(0)" onclick="javascript:inc('story')">Our Story</a></li>
-        <li><a href="http://owkstore.tictail.com/" target = "_blank">Store</a></li>
-        <li><a href="javascript:void(0)" onclick="javascript:inc('about')">About</a></li>
-        <li><a href="javascript:void(0)" onclick="javascript:inc('blog')">Blog</a></li>
+        <li {% if page.url == '/index.html' or page.url == '/home.html' %}class = 'active'{% endif %}><a href="/home.html">Home</a></li>
+        <li {% if page.url == '/story.html' %}class = 'active'{% endif %}><a href="/story.html">Our Story</a></li>
+        <li><a href="http://owkstore.tictail.com/">Store</a></li>
+        <li {% if page.url == '/blog.html' %}class = 'active'{% endif %}><a href="/blog.html">Blog</a></li>
+        <li {% if page.url == '/about.html' %}class = 'active'{% endif %}><a href="/about.html">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
