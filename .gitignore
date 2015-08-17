@@ -1,4 +1,5 @@
 /img/emblem/*
 /img/logo/*
 .*
+_site
 !/.gitignore
