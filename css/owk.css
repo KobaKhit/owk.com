@@ -15,6 +15,10 @@ a {
     text-decoration: underline;
 }
 
+section {
+    padding: 0px 0px 40px 0px;
+}
+
 .underline {
     text-decoration: underline;
 }
