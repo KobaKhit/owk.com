@@ -14,4 +14,7 @@ $(window).load(function(){
 	      $(".nav li").removeClass("active");
 	      $(this).addClass("active");
 	    });
+
+	    // Scroll product list
+	    $("#a2").velocity("scroll", { axis:'x', container: $(".product-list"), delay: 1000, duration: 5000 });
 });

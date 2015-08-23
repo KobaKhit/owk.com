@@ -1,5 +1,5 @@
 
- @font-face {
+@font-face {
     font-family: Arcon;
     
     src: url(../fonts/arcon.regular.otf);
@@ -19,9 +19,29 @@ section {
     padding: 0px 0px 40px 0px;
 }
 
+footer {
+    position:relative;
+    height:50px;
+    margin-bottom:5%;
+}
+
+@media (max-width: 979px) {
+    /*Add bottom margin when columns stacked on mobile*/
+    /*http://stackoverflow.com/questions/19822127/vertical-space-when-stacking-columns-in-bootstrap-3*/
+
+  [class*="col-"]:not(:last-child){ margin-bottom: 20px; }
+
+}
+
 .underline {
     text-decoration: underline;
 }
+
+.nounderline{
+    text-decoration: none !important;
+    color: inherit;
+}
+
 
 .bold {
     font-weight: bold;
@@ -103,6 +123,13 @@ nav a {
 	/*padding-top:9%*/
 }
 
+@media(max-width: 480px) {
+   /* CSS overrides for mobile here */
+   .story-desc {
+    font-size:16px !important;
+    }
+}
+
 .product-list{
     overflow:scroll;
     overflow-y: hidden; 
@@ -141,20 +168,4 @@ nav a {
     text-decoration: none;
 }
 
-@media(max-width: 480px) {
-   /* CSS overrides for mobile here */
-   .story-desc {
-    font-size:16px !important;
-    }
-}
 
-.nounderline{
-	text-decoration: none !important;
-	color: inherit;
-}
-
-footer {
-    position:relative;
-    height:50px;
-    margin-bottom:5%;
-}
