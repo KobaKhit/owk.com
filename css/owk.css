@@ -12,13 +12,35 @@ body {
 
 a {
     color:black;
+    text-decoration: underline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#landing-page {
+    /*index.html*/
+    opacity:0;
+    visibility: collapse;
+}
+
+
+.noscroll {
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .navbar{
     background: none;
     border: none;
+    margin-bottom: 0px;
 }
-
 
 .navbar .navbar-nav {
     display: inline-block;
@@ -30,11 +52,37 @@ a {
     text-align: center;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .navbar-toggle {
   width: 100%;
   float: none;
   margin-right: 0;
   border:none;
+}
+
+.submenu li > a{
+    margin:0;
+    padding:0;
+}
+
+.submenu li {
+    padding: 0px 10px;
+}
+
+@media (min-width: 979px) {
+    /*On dropdown hover display options*/
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 979px) {
+  .submenu {
+    display: none;
+  }
 }
 
 .story {
@@ -84,8 +132,9 @@ a {
     width:200px
 }
 
-.social-pad {
+.social-link {
     padding:0px 5px;
+    text-decoration: none;
 }
 
 @media(max-width: 480px) {

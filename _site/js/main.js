@@ -9,6 +9,7 @@ $(window).load(function(){
 				.velocity({ width: '100px'})
 			})
 
+		// current page menu item set to active
 	    $(".nav li").on("click", function() {
 	      $(".nav li").removeClass("active");
 	      $(this).addClass("active");

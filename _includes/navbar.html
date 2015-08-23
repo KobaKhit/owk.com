@@ -13,11 +13,29 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li {% if page.url == '/index.html' or page.url == '/home.html' %}class = 'active'{% endif %}><a href="/home.html">Home</a></li>
-        <li {% if page.url == '/story.html' %}class = 'active'{% endif %}><a href="/story.html">Our Story</a></li>
         <li><a href="http://owkstore.tictail.com/">Store</a></li>
         <li {% if page.url == '/blog.html' %}class = 'active'{% endif %}><a href="/blog.html">Blog</a></li>
-        <li {% if page.url == '/about.html' %}class = 'active'{% endif %}><a href="/about.html">About</a></li>
+        <!-- <li {% if page.url == '/about.html' %}class = 'active'{% endif %}><a href="/about.html">About</a></li> -->
+
+        <li {% if page.url == '/about.html' or page.url == '/story.html' %}class = 'dropdown active'{% else %}class = 'dropdown'{% endif %}>
+          <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/story.html">Our Story</a></li>
+            <li><a href="/about.html">Team</a></li>
+            <!-- <li role="separator" class="divider"></li> -->
+          </ul>
+        </li>
+
       </ul>
+
+      {% if page.url == '/story.html' or page.url == '/about.html' %}
+      <div class = 'submenu'>
+        <ul class="nav navbar-nav">
+          <li {% if page.url == '/story.html' %}class = 'bold'{% endif %}><a href = '/story.html'>Our Story</a></li> 
+          <li {% if page.url == '/about.html' %}class = 'bold'{% endif %}><a href = '/about.html'>Team</a></li>
+        </ul>
+      </div>
+      {% endif %}
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
