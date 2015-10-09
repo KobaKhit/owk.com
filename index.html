@@ -52,10 +52,16 @@
 </head>
 
 <body class= 'noscroll'>
+	<br>
 
-	<img id = 'landing-img' src="/img/JAMESOWKEMBLEM1080.png" class="img-responsive img-center" alt="Only With Kings" width="500">
+	<div id = 'landing-page2' class = 'text-center' style = 'opacity:0'>
+		<img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900" >
+		<a id = 'continue'>Continue to owk.co</a>
+	</div>
+
 
 	<div id = 'landing-page'>
+		<img id = 'landing-img' src="/img/JAMESOWKEMBLEM1080.png" class="img-responsive img-center" alt="Only With Kings" width="100">
 		<!-- Navigation -->
 		{%include navbar.html %}
 
@@ -67,6 +73,15 @@
 		</div>
 
 		<div class='container'>
+			<!-- Upcoming events -->
+			<section>
+		    	<div class='text-center'>
+		    		<h3>Upcoming Events</h3>
+		    		<img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900">
+		            
+		    	</div>
+		    </section>
+
 			<!-- Store -->
 		    <section>
 		    	<div class='text-center'>
@@ -128,16 +143,25 @@
 		  // https://github.com/alexanderdickson/waitForImages
 		  
 		  // Velocity animations
-			$("#landing-img")
-			.velocity({ width: '-=4%' },{delay:400,duration:200})
-			.velocity({width: '+=3%'},1000)
-			.velocity({ width: '100px'},500)
+			// $("#landing-img")
+			// .velocity({ width: '-=4%' },{delay:400,duration:200})
+			// .velocity({width: '+=3%'},1000)
+			// .velocity({ width: '100px'},500)
 
-			$('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
-				complete: function(){
-					$('body').removeClass('noscroll')
-				}
-			})
+			$("#landing-page2")
+			.velocity("fadeIn", { duration: 3500 })	
+
+			$('#continue').on('click', function(){
+				$("#landing-page2").velocity({ opacity: 0 }, { display: "none" })
+
+				$('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
+					complete: function(){
+						$('body').removeClass('noscroll')
+					}
+				})
+
+			})		
+
 			
 		});
 

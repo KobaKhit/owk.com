@@ -16,5 +16,5 @@ $(window).load(function(){
 	    });
 
 	    // Scroll product list
-	    $("#a2").velocity("scroll", { axis:'x', container: $(".product-list"), delay: 1500, duration: 5000 });
+	    $("#a2").velocity("scroll", { axis:'x', container: $(".product-list"), delay: 2000, duration: 5000 });
 });
