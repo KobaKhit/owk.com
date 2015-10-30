@@ -38,6 +38,11 @@
     <!-- Text scaling -->
     <script src="js/fittext.js"></script>  
 
+    <!-- Image gallery -->
+    <link rel="stylesheet" href="js/utils/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/utils/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
     <!-- Image loader callback -->
     <!-- https://github.com/alexanderdickson/waitForImages -->
     <script src = 'https://cdn.rawgit.com/alexanderdickson/waitForImages/master/dist/jquery.waitforimages.min.js'></script>
@@ -52,16 +57,10 @@
 </head>
 
 <body class= 'noscroll'>
-	<br>
 
-	<div id = 'landing-page2' class = 'text-center' style = 'opacity:0'>
-		<img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900" >
-		<a id = 'continue'>Continue to owk.co</a>
-	</div>
-
+	<img id = 'landing-img' src="/img/JAMESOWKEMBLEM1080.png" class="img-responsive img-center" alt="Only With Kings" width="500">
 
 	<div id = 'landing-page'>
-		<img id = 'landing-img' src="/img/JAMESOWKEMBLEM1080.png" class="img-responsive img-center" alt="Only With Kings" width="100">
 		<!-- Navigation -->
 		{%include navbar.html %}
 
@@ -74,13 +73,13 @@
 
 		<div class='container'>
 			<!-- Upcoming events -->
-			<section>
-		    	<div class='text-center'>
-		    		<h3>Upcoming Events</h3>
-		    		<img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900">
+		    <!-- <section>
+		        <div class='text-center'>
+		            <h3>Upcoming Events</h3>
+		            <img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900">
 		            
-		    	</div>
-		    </section>
+		        </div>
+		    </section> -->
 
 			<!-- Store -->
 		    <section>
@@ -103,23 +102,21 @@
 		    	</div>
 		    </section>
 
-			<!-- Media -->
-		    <section>
-		    	<div class='text-center row'>
-		            <h3>Soundtrack & Visuals<br><small>video by <a href="http://www.collinwelch.com" class = 'nounderline' target="_blank"> Collin Welch</a></h3>
-
-		            <br>
-		            <div class = 'col-lg-6'>
-		    		  <div style = 'max-width:400px;margin:0 auto'>
-		    		  {% include soundcloud.html %}
-		    		  </div>
-		            </div>
-
-		            <div class = 'col-lg-6'>
-		                <iframe width="100%" height="400" style="max-width:560px" src="//www.youtube.com/embed/4SjdKniP2ng" frameborder="0" allowfullscreen></iframe>
-		            </div>
-		    	</div>
-		    </section>
+		    <!-- Past events -->
+			<section>
+				<div class='text-center'>
+					<h3>Past Events</h3>
+					 <ul id = 'products' class='list-unstyled list-inline product-list'>
+					 	{% for m in site.data.events %}
+					 	<li>
+					 		<a class="fancybox" rel="group" href="{{m.img}}">
+					 			<img class = '' src="{{m.img}}" alt="" width = "300" />	
+					 		</a>
+					 	</li>
+					 	{% endfor %}
+					 </ul>
+				</div>
+			</section>
 
 		    <!-- Community -->
 		    <section>
@@ -143,28 +140,23 @@
 		  // https://github.com/alexanderdickson/waitForImages
 		  
 		  // Velocity animations
-			// $("#landing-img")
-			// .velocity({ width: '-=4%' },{delay:400,duration:200})
-			// .velocity({width: '+=3%'},1000)
-			// .velocity({ width: '100px'},500)
+			$("#landing-img")
+			.velocity({ width: '-=4%' },{delay:400,duration:200})
+			.velocity({width: '+=3%'},1000)
+			.velocity({ width: '100px'},500)
+			$('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
+				complete: function(){
+					$('body').removeClass('noscroll')
+				}
+			})
 
-			$("#landing-page2")
-			.velocity("fadeIn", { duration: 3500 })	
 
-			$('#continue').on('click', function(){
-				$("#landing-page2").velocity({ opacity: 0 }, { display: "none" })
-
-				$('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
-					complete: function(){
-						$('body').removeClass('noscroll')
-					}
-				})
-
-			})		
-
+			// Fancybox past events
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
 			
 		});
-
 	</script>
 
 	<!-- Google Analytics tracking -->

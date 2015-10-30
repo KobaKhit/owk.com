@@ -12,10 +12,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li {% if page.url == '/index.html' or page.url == '/home.html' %}class = 'active'{% endif %}><a href="/home.html">Home</a></li>
+
+        <li {% if page.url == '/index.html' or page.url == '/home.html' %}class = 'active'{% endif %}>
+          <a href="/home.html">Home</a>
+        </li>
+
         <li><a href="http://owkstore.tictail.com/">Store</a></li>
-        <li {% if page.url == '/blog.html' %}class = 'active'{% endif %}><a href="/blog.html">Blog</a></li>
-        <!-- <li {% if page.url == '/about.html' %}class = 'active'{% endif %}><a href="/about.html">About</a></li> -->
+
+        <li {% if page.url == '/blog.html' %}class = 'active'{% endif %}>
+          <a href="/blog.html">Blog</a>
+        </li>
+
+        <li {% if page.url == '/media.html' %}class = 'active'{% endif %}><a href="/media.html">Media</a></li>
 
         <li {% if page.url == '/about.html' or page.url == '/story.html' %}class = 'dropdown active'{% else %}class = 'dropdown'{% endif %}>
           <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
