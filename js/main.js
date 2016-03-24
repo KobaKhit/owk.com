@@ -2,7 +2,7 @@ $(window).load(function(){
 	$("#landing-img")
 			.mouseover(function(){
 				$(this)
-				.velocity({ width: '+=1%'})
+				.velocity({ width: '+=10%'})
 			})
 			.mouseout(function(){
 				$(this)
