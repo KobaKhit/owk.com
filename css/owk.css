@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: Arcon, Verdana;
+    font-family: Arcon;
     font-size: 16px;
-    background:black;
+    background: #0E0B03;
     color:white;
+    /*letter-spacing: -4px;*/
 }
 
 a {

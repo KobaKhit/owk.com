@@ -60,6 +60,8 @@
 
 	<img id = 'landing-img' src="/img/newlogo.png" class="img-responsive img-center" alt="Only With Kings" width="500">
 
+	<h1 class = "text-center"><a href="/home.html" style = "color:white">Enter</a></h1>
+
 	<div id = 'landing-page'>
 		<!-- Navigation -->
 		{%include navbar.html %}
@@ -137,7 +139,7 @@
 	</div>
 
 	<!-- Custom js -->
-    <script src="/js/main.js"></script>
+    <!--<script src="/js/main.js"></script-->
 
 	<script type='text/javascript'>
 		$('.product-list').waitForImages(function(){
@@ -145,15 +147,15 @@
 		  // https://github.com/alexanderdickson/waitForImages
 		  
 		  // Velocity animations
-			$("#landing-img")
-			.velocity({ width: '-=4%' },{delay:400,duration:200})
-			.velocity({width: '+=3%'},1000)
-			.velocity({ width: '100px'},500)
-			$('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
-				complete: function(){
-					$('body').removeClass('noscroll')
-				}
-			})
+			// $("#landing-img")
+			// .velocity({ width: '-=4%' },{delay:400,duration:200})
+			// .velocity({width: '+=3%'},1000)
+			// .velocity({ width: '100px'},500)
+			// $('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
+			// 	complete: function(){
+			// 		$('body').removeClass('noscroll')
+			// 	}
+			// })
 
 
 			// Fancybox past events
