@@ -121,12 +121,16 @@ ul.nav li a {
 }
 
 .story {
-    background: url(../img/story2.jpg) no-repeat left center scroll;
+    /*background: url(../img/PandaLeaves.jpg) no-repeat center scroll;*/
     height:700px;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;
+}
+
+.story img {
+    border-radius: 14px;
 }
 
 .story-desc {
