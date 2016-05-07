@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<!-- Store -->
+<section>
+	<div class='text-center'>
+		<h3>Portfolio <small>Fall 2015, OWKTBR</small></h3>
+        <div class ='text-center'>
+            <ul id = 'products' class='list-unstyled list-inline product-list'>
+            {% for pro in site.data.products %}
+              <li>
+                <div id = 'a{{pro.id}}' class = 'product-div'>
+                    <span class='product-desc'>{{pro.name}} {{ pro.price}}.00$</span>
+                    <a href="http://owkstore.tictail.com/" title="{{pro.name}} {{ pro.price}}.00$">
+                        <img class = 'product-img' src="{{pro.img}}" alt="" />
+                    </a>
+                </div>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+	</div>
+</section>
