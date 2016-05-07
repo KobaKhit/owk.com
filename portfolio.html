@@ -25,7 +25,7 @@ layout: default
 
 <section>
 	<div class='text-center'>
-		<h3><small>Winter 2015, OWKTBR</small></h3>
+		<h3><small>Winter 2015</small></h3>
         <div class ='text-center'>
             <ul id = 'products2' class='list-unstyled list-inline product-list'>
             {% for pro in site.data.products2 %}
@@ -35,6 +35,26 @@ layout: default
                     <a href="http://owkstore.tictail.com/" title="{{pro.name}} {{ pro.price}}.00$">
                         <img class = 'product-img' src="{{pro.img}}" alt="" />
                     </a>
+                </div>
+              </li>
+            {% endfor %}
+            </ul>
+        </div>
+	</div>
+</section>
+
+<section>
+	<div class='text-center'>
+		<h3><small>Winter 2016</small></h3>
+        <div class ='text-center'>
+            <ul id = 'products3' class='list-unstyled list-inline product-list'>
+            {% for pro in site.data.products3 %}
+              <li>
+                <div id = 'c{{pro.id}}' class = 'product-div'>
+                    <span class='product-desc'>{{pro.name}} {{ pro.price}}.00$</span>
+                
+                        <img class = 'product-img' src="{{pro.img}}" alt="" />
+         
                 </div>
               </li>
             {% endfor %}
