@@ -1,0 +1,188 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Owk.co</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/owk.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- JQuery -->
+    <script src="js/utils/jquery.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/utils/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/utils/bootstrap.js"></script>
+
+    <!-- Veocity js for animations -->
+    <script  src="js/utils/velocity.js"></script>
+
+    <!-- Text scaling -->
+    <script src="js/utils/fittext.js"></script>  
+
+    <!-- Image gallery -->
+    <link rel="stylesheet" href="js/utils/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/utils/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+    <!-- Image loader callback -->
+    <!-- https://github.com/alexanderdickson/waitForImages -->
+    <script src = 'https://cdn.rawgit.com/alexanderdickson/waitForImages/master/dist/jquery.waitforimages.min.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    .noscroll{
+    	background-color: white;
+    }
+
+    </style>
+
+</head>
+
+<body class= 'noscroll'>
+
+	<img id = 'landing-img' src="/img/newlogo.png" class="img-responsive img-center" alt="Only With Kings" width="500">
+
+	<h1 class = "text-center"><a href="/home.html" style = "color:black">Continue</a></h1>
+
+	<div id = 'landing-page'>
+		<!-- Navigation -->
+		{%include navbar.html %}
+
+		<div class = 'text-center container'>
+			<!-- Only With Kings Line -->
+			<div style = 'background-color:black; width:100%;margin:0 auto;'>
+				<h1><b style = 'color:white'>ONLY WITH KINGS</b></h1>
+			</div>
+		</div>
+
+		<div class='container'>
+			<section>
+		        <div class='text-center'>
+		            <h1>Under reconstruction</h1>
+		        </div>
+		    </section>
+			<!-- Upcoming events -->
+		    <!-- <section>
+		        <div class='text-center'>
+		            <h3>Upcoming Events</h3>
+		            <img id = 'landing-img2' src="/img/owktbr15.jpg" class="img-responsive img-center" alt="Only With Kings" width="900">
+		            
+		        </div>
+		    </section> -->
+
+			<!-- Store -->
+		    <!-- <section>
+		    	<div class='text-center'>
+		    		<h3>Shop Attire <small>OWKTBR 2015 merch is in!</small></h3>
+		            <div class ='text-center'>
+		                <ul id = 'products' class='list-unstyled list-inline product-list'>
+		                {% for pro in site.data.products %}
+		                  <li>
+		                    <div id = 'a{{pro.id}}' class = 'product-div'>
+		                        <span class='product-desc'>{{pro.name}} {{ pro.price}}.00$</span>
+		                        <a href="http://owkstore.tictail.com/" title="{{pro.name}} {{ pro.price}}.00$">
+		                            <img class = 'product-img' src="{{pro.img}}" alt="" />
+		                        </a>
+		                    </div>
+		                  </li>
+		                {% endfor %}
+		                </ul>
+		            </div>
+		    	</div>
+		    </section> -->
+
+		    <!-- Past events -->
+			<section style = "display:none">
+				<div class='text-center'>
+					<h3>Past Events</h3>
+					 <ul id = 'products' class='list-unstyled list-inline product-list'>
+					 	{% for m in site.data.events %}
+					 	<li>
+					 		<a class="fancybox" rel="group" href="{{m.img}}">
+					 			<img class = '' src="{{m.img}}" alt="" width = "300" />	
+					 		</a>
+					 	</li>
+					 	{% endfor %}
+					 </ul>
+				</div>
+			</section>
+
+		    <!-- Community -->
+		    <section>
+		        <div class='text-center'>
+		            <h3>Community<br><small>#onlywithkings</small></h3>
+		            <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/0382dee45a34405e19a34434e842801c6625bd0b.html" id="instansive_0382dee45a" name="instansive_0382dee45a"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+		        </div>
+		    </section>
+		</div>
+
+		<!-- Footer -->
+		{% include footer.html %}
+	</div>
+
+	<!-- Custom js -->
+    <!--<script src="/js/main.js"></script-->
+
+	<script type='text/javascript'>
+		$('.product-list').waitForImages(function(){
+		  // Image loader callback
+		  // https://github.com/alexanderdickson/waitForImages
+		  
+		  // Velocity animations
+			// $("#landing-img")
+			// .velocity({ width: '-=4%' },{delay:400,duration:200})
+			// .velocity({width: '+=3%'},1000)
+			// .velocity({ width: '100px'},500)
+			// $('#landing-page').velocity({opacity:1},{delay:1200, duration:1350, visibility: "visible", 
+			// 	complete: function(){
+			// 		$('body').removeClass('noscroll')
+			// 	}
+			// })
+
+
+			// Fancybox past events
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+			
+		});
+	</script>
+
+	<!-- Google Analytics tracking -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('require', 'displayfeatures');
+      ga('create', 'UA-56760962-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</body>
+</html>
