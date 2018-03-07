@@ -1,35 +1,35 @@
 - name: Higher Learning
-  img: /img/products/owktbr-1.jpg
+  img: img/products/owktbr-1.jpg
   price: 25
   quantity: 5
   id: 10
 
 - name: Booz hoody
-  img: /img/products/owktbr-2.jpg
+  img: img/products/owktbr-2.jpg
   price: 35
   quantity: 5
   id: 11
 
 - name: Only With Kings hoody
-  img: /img/products/owktbr-3.jpg
+  img: img/products/owktbr-3.jpg
   price: 35
   quantity: 5
   id: 12
 
 - name: No L's Taken
-  img: /img/products/owktbr-4.jpg
+  img: img/products/owktbr-4.jpg
   price: 25
   quantity: 5
   id: 13
 
 - name: WWSTBH
-  img: /img/products/owktbr-5.jpg
+  img: img/products/owktbr-5.jpg
   price: 25
   quantity: 5
   id: 14
 
 - name: Panda
-  img: /img/products/owktbr-6.jpg
+  img: img/products/owktbr-6.jpg
   price: 25
   quantity: 5
   id: 15

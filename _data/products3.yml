@@ -1,29 +1,29 @@
 - name: Snap 1
-  img: /img/products/snap2.jpg
+  img: img/products/snap2.jpg
   price: 35
   quantity: 5
   id: 16
 
 - name: Snap 2
-  img: /img/products/snap1.jpg
+  img: img/products/snap1.jpg
   price: 35
   quantity: 5
   id: 17
 
 - name: Snap 3
-  img: /img/products/snap3.jpg
+  img: img/products/snap3.jpg
   price: 35
   quantity: 5
   id: 18
 
 - name: Snap 4
-  img: /img/products/snap4.jpg
+  img: img/products/snap4.jpg
   price: 35
   quantity: 5
   id: 19
 
 - name: Snap 5
-  img: /img/products/snap5.jpg
+  img: img/products/snap5.jpg
   price: 35
   quantity: 5
   id: 20
