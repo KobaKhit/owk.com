@@ -8,4 +8,4 @@
 # Site settings
 email: kobakhit@gmail.com
 baseurl: "/owk.com" # the subpath of your site, e.g. /blog
-url: "http://www.kobakhit.com/" # the base hostname & protocol for your site
+url: "https://www.kobakhit.com/" # the base hostname & protocol for your site
